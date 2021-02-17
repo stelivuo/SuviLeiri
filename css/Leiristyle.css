@@ -32,7 +32,7 @@ html {
         
       }
       html {
-        background-image: url('img/rosegold.jpg');
+        background-image: url("../img/rosegold.jpg");
       }
 
       body {
