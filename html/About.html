@@ -8,36 +8,59 @@
         <link href="../css/Leiristyle.css" rel="stylesheet">
       </head>
 <body>
-    <p style="font-size: 20px;">
+    <p id=top style="font-size: 20px;">
         <a style="color: rgb(3, 141, 130);" href="../index.html"> Etusivu</a>  
         <a style="color: pink;" href="About.html"> About</a>  
         <a style="color: rgb(3, 141, 130);" href="Ohjelma.html"> Ohjelma</a>  
         <a style="color: rgb(3, 141, 130);" href="Ilmoittautuminen.html"> Ilmoittautuminen</a> 
       </p>
+
+      <div id =mySidenav class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#mik">Mikä?</a>
+        <a href="#vapaa">Kauan?</a>
+        <a href="#covid">Korona?</a>
+        <a href="#fisc">Hinta?</a>
+        <a href="#how">Miten?</a>
+      </div>
   
-  <h1>About</h1>
-  <p>Mikä ihmeen kesäleiri? </p>
+  <h1 >About</h1>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Valikko</span>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+  <p id=mik>Mikä ihmeen kesäleiri? </p>
   <p style="font-size:16px;font-family: 'Times New Roman', Times, serif;">
     Kesäleirin aikana on tarjolla ma-pe erilaisia aktiviteetteja lähtökohtaisesti toimistotyöajan jälkeen. 
     Aktiivinen viikko huipentuu lauantaina järjestettäviin syntymäpäiväjuhliin! 
     Tarkemmat ajat ja paikat sovitaan viikkoa ennen h-hetkeä, mutta joka tapauksessa aktiviteetit tapahtuvat pääkaupunkiseudulla. 
   </p>
-  <p>Tarvitseeko siis ottaa koko viikko vapaaksi, että voi osallistua?</p>
+  <p id=vapaa>Tarvitseeko siis ottaa koko viikko vapaaksi, että voi osallistua?</p>
   <p style="font-size:16px;font-family: 'Times New Roman', Times, serif;">
   Halutessasi voit ilmestyä vain lauantain juhliin tai sitten ettet tule juhliin, mutta tulet kiipeilemään ja pelaamaan tennistä esimerkiksi. 
   Kaikkeen ei tarvitse osallistua, mutta kaikkeen saa osallistua! Ilmoittautumisen perusteella kustakin aktiviteetista kiinnostuneet kerätään ryhmächattiin ja lyödään lukkoon kellonaika ja paikka.</p>
-  <p>Entä Korona?</p>
+  <p id=covid>Entä Korona?</p>
   <p style="font-size:16px;font-family: 'Times New Roman', Times, serif;">
     Luonnollisesti elämme Koronan ehdoilla ja perumme aktiviteetit, mikäli rajoitukset ovat sellaiset, ettemme voi mitään järjestää.
   </p>
-  <p>Mitä tämä kustantaa?</p>
+  <p id=fisc>Mitä tämä kustantaa?</p>
   <p style="font-size:16px;font-family: 'Times New Roman', Times, serif;">
     "Ohjelma"-sivulla on selostettu tarkemmin kustakin ohjelmasta ja mitä se kustantaa.
   </p>
-  <p>Miten mukaan?</p>
+  <p id=how>Miten mukaan?</p>
   <p style="font-size:16px;font-family: 'Times New Roman', Times, serif;">
     "Ilmoittautuminen"-sivulla pääset ilmoittamaan itsesi mukaan. Käytännön syistä johtuen toivoisin, että toukokuuhun mennessä ilmoittaisit, mikäli haluat osallistua, niin minulle jää runsaasti aikaa järjestellä varaukset yms.
   </p>
+  <p style="color: rgb(3, 141, 130);"><a href="#TOP">Alkuun</a></p>
+    
 </body>
 
 </html>

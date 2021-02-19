@@ -2,6 +2,49 @@ html {
     font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
     font-family: "Flucida Handwriting","Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
   }
+  .sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgb(195, 248, 244);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display:block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: pink;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
   
  
  h1 {

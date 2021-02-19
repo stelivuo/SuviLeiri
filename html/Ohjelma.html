@@ -8,25 +8,49 @@
         <link href="../css/Leiristyle.css" rel="stylesheet">
       </head>
 <body>
-  <p style="font-size: 20px;">
+  <p id=TOP style="font-size: 20px;">
     <a style="color: rgb(3, 141, 130)" href="../index.html"> Etusivu</a>  
     <a style="color: rgb(3, 141, 130);" href="About.html"> About</a>  
     <a style="color: pink;" href="Ohjelma.html"> Ohjelma</a>  
     <a style="color: rgb(3, 141, 130);" href="Ilmoittautuminen.html"> Ilmoittautuminen</a> 
   </p>
 
-  <h1>Leirin Ohjelma</h1>
+  <div id =mySidenav class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#TOP">Alkuun</a>
+    <a href="#MA">Maanantai</a>
+    <a href="#TI">Tiistai</a>
+    <a href="#KE">Keskiviikko</a>
+    <a href="#TO">Torstai</a>
+    <a href="#PE">Perjantai</a>
+    <a href="#PE">Lauantai</a>
     
- <p style="text-align: left;">Ma 14.6. Joukkuelajipäivä!</p>
+  </div>
+  <h1 >Leirin Ohjelma</h1>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Valikko</span>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+ 
+  
+ <p id=MA style="text-align: left;">Ma 14.6. Joukkuelajipäivä!</p>
  <p style="text-align: left;font-size:16px;font-family: 'Times New Roman', Times, serif;">  Leiri potkaistaan käyntiin eeppisellä Pesäpallomatsilla! 
       <br>Ohjelmanumero on ilmainen! 
       <br>Jos sinulla on pesäpallovälineitä, tuo toki ne mukaan.</p>
-      <p style="text-align: left;">Ti 15.6. Leikkipäivä!</p>
+      <p id=TI style="text-align: left;">Ti 15.6. Leikkipäivä!</p>
       <p style="text-align: left;font-size:16px;font-family: 'Times New Roman', Times, serif;">
       Tänä päivänä menemme ensiksi Prison Islandiin, jonka jälkeen menemme läheiseen puistoon piknikille 
       ja leikimme piha- ja teatterileikkejä porukalla!
       <br>Prison Island kustantaa 90min 22,50e/hlö ja piknik toimii nyyttärimeiningillä.</p>
-      <p style="text-align: left;">Ke 16.6. Yksilölajipäivä!</p>
+      <p ID=KE style="text-align: left;">Ke 16.6. Yksilölajipäivä!</p>
       <p style="text-align: left;font-size:16px;font-family: 'Times New Roman', Times, serif;">
       Yksilölajipäivänä pelataan padelia! 
       <br>Jos emme saa neljällä jaollista määrää pelaajia, menemme kiipeilemään.
@@ -34,7 +58,7 @@
       <br> Kiipeilyssä keskustelemme porukalla menemmekö ulos, sisään köysikiipeilemään tai boulderoimaan. Hinta riippuu paikasta ja välinevuokrasta, mutta on about 20e. 
       </p>
     
-     <p style="text-align: left;">To 17.6. Rantailupäivä ja Karaoke!</p>
+     <p ID=TO style="text-align: left;">To 17.6. Rantailupäivä ja Karaoke!</p>
      <p style="text-align: left;font-size:16px;font-family: 'Times New Roman', Times, serif;">
      Rannalle! 
      <br>Rannalla hengaamme, uimme ja kokeilemme suppailua. Illalla menemme karaokeen!
@@ -42,17 +66,19 @@
      <br>Tämä ohjelmanumero maksaa osallistujalle sen verran, kuin suppailu maksaa (20e), sekä kuinka paljon ikinä haluaakaan kuluttaa karaokessa.
      <br> Mikäli päädymme B-suunnitelmaan eli lautapelailemaan, ohjelmanumero on ilmainen. Tuo toki omia pelejä!
     </p> 
-     <p style="text-align: left;">Pe 18.6.Taidepäivä!</p>
+     <p ID=PE style="text-align: left;">Pe 18.6.Taidepäivä!</p>
      <p style="text-align: left;font-size:16px;font-family: 'Times New Roman', Times, serif;">
       Taidepäivänä nautimme teeiltaa kuunnellen hyvää musiikkia ja tehden itselle mieluisaa taidetta. 
       <br>Tuo mukanasi käsityö, maalaus, piirros tms. mukanasi, jota tahtoisit työstää tai nauti hyvässä seurassa teestä ja musiikista.
       <br>Ohjelmanumero on ilmainen ja Suvilta voi saada käyttöön tusseja, kyniä, paperia ja vesivärejä erikseen pyytämällä.
      </p>
-      <p style="text-align: left;">La 19.6. Extreme Esport ja Kesäjuhlat!</p>
+      <p ID=LA style="text-align: left;">La 19.6. Extreme Esport ja Kesäjuhlat!</p>
       <p style="text-align: left;font-size:16px;font-family: 'Times New Roman', Times, serif;">
       Lauantai starttaa Extreme Esportilla ja illalla on luvassa bileet. Bileiden teemana on 90-luku.
       <br>Extreme Esport kustantaa 28e/hlo, lisätietoa löytyy <a href="https://esportextreme.fi/">Täältä</a>
       <br> Bileissä OPM ja rento meininki^^</p>
+
+      <p style="color: rgb(3, 141, 130);"><a href="#TOP">Alkuun</a></p>
     
 </body>
 
